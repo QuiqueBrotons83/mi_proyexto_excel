@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Descripci&oacute;n del conjunto de datos&colon;</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <div style="text-align: center;">
+  <img src="https://github.com/Hack-io-Data/Imagenes/blob/main/01-LogosHackio/logo_naranja@4x.png?raw=true" alt="esquema" />
+</div>
+<h3 id="descripción-del-conjunto-de-datos">Descripción del conjunto de datos:</h3>
+<p>Este conjunto de datos proporciona información detallada sobre las transacciones de ventas realizadas por una empresa, incluyendo detalles de los pedidos, productos, clientes y datos financieros como precios y beneficios. ALa descripción de las columnas la tienes a continuación:</p>
+<ol>
+<li>
+<p><strong>Row ID</strong>: Un identificador único para cada fila o transacción registrada. Esta columna es útil para identificar transacciones específicas y evitar duplicados.</p>
+</li>
+<li>
+<p><strong>Order ID</strong>: Un identificador único para cada pedido realizado. Esta columna permite agrupar múltiples filas que forman parte de un mismo pedido.</p>
+</li>
+<li>
+<p><strong>Order Date</strong>: La fecha en que se realizó el pedido, almacenada en un formato numérico (número de serie de Excel). Es necesario convertirla a un formato de fecha legible.</p>
+</li>
+<li>
+<p><strong>Ship Date</strong>: La fecha en que se envió el pedido, también almacenada en formato numérico.</p>
+</li>
+<li>
+<p><strong>Ship Mode</strong>: El modo de envío utilizado para el pedido, como &quot;Second Class&quot;, &quot;Standard Class&quot;, etc. Esta columna es útil para analizar los costos y tiempos de envío.</p>
+</li>
+<li>
+<p><strong>Customer ID</strong>: Un identificador único para cada cliente. Permite agrupar las compras realizadas por el mismo cliente.</p>
+</li>
+<li>
+<p><strong>Customer Name</strong>: El nombre del cliente que realizó el pedido.</p>
+</li>
+<li>
+<p><strong>Segment</strong>: Segmento al que pertenece el cliente, como &quot;Consumer&quot;, &quot;Corporate&quot;, o &quot;Home Office&quot;. Esta clasificación permite analizar las ventas por tipo de cliente.</p>
+</li>
+<li>
+<p><strong>Country</strong>: El país desde el que se realizó el pedido.</p>
+</li>
+<li>
+<p><strong>City</strong>: La ciudad desde la que se realizó el pedido. Algunas filas pueden tener valores faltantes en esta columna.</p>
+</li>
+<li>
+<p><strong>State</strong>: El estado o región del pedido, útil para realizar análisis de ventas regionales.</p>
+</li>
+<li>
+<p><strong>Postal Code</strong>: El código postal del lugar donde se realizó el pedido.</p>
+</li>
+<li>
+<p><strong>Region</strong>: Región geográfica a la que pertenece la transacción, como &quot;East&quot;, &quot;West&quot;, etc.</p>
+</li>
+<li>
+<p><strong>Category</strong>: La categoría a la que pertenece el producto vendido, como &quot;Furniture&quot;, &quot;Technology&quot;, o &quot;Office Supplies&quot;.</p>
+</li>
+<li>
+<p><strong>Sub-Category</strong>: La subcategoría del producto, proporcionando un nivel adicional de detalle (por ejemplo, &quot;Chairs&quot;, &quot;Tables&quot;, etc.).</p>
+</li>
+<li>
+<p><strong>Product Name</strong>: El nombre completo del producto vendido.</p>
+</li>
+<li>
+<p><strong>Sales</strong>: El monto total de la venta para ese producto, basado en la cantidad vendida y el precio unitario.</p>
+</li>
+<li>
+<p><strong>Quantity</strong>: La cantidad de productos vendidos en la transacción.</p>
+</li>
+<li>
+<p><strong>Discount</strong>: El porcentaje de descuento aplicado a la venta.</p>
+</li>
+<li>
+<p><strong>Discount value</strong>: El valor monetario del descuento aplicado a la venta.</p>
+</li>
+<li>
+<p><strong>Profit</strong>: La ganancia generada por la venta, calculada como la diferencia entre el ingreso por ventas y el costo del producto.</p>
+</li>
+<li>
+<p><strong>COGS</strong>: El costo de los bienes vendidos, es decir, cuánto costó la producción o adquisición del producto vendido.</p>
+</li>
+<li>
+<p><strong>Shipping time range</strong>: El rango de tiempo de envío del producto en días.</p>
+</li>
+<li>
+<p><strong>Year sales</strong>: El año en que se realizó la venta.</p>
+</li>
+</ol>
+<hr>
+<h3 id="ideas-de-generación-de-columnas-para-transformación-de-datos">Ideas de generación de columnas para transformación de datos:</h3>
+<ul>
+<li>
+<p><strong><code>formatted_order_date</code></strong>: Convertir la columna <code>Order Date</code> a un formato de fecha legible (DD/MM/AAAA). Esto permitirá realizar análisis de tendencias temporales sobre las ventas.</p>
+</li>
+<li>
+<p><strong><code>formatted_ship_date</code></strong>: Convertir la columna <code>Ship Date</code> a un formato de fecha legible. Esto facilitará el análisis del tiempo de envío y permitirá evaluar la eficiencia logística.</p>
+</li>
+<li>
+<p><strong><code>order_processing_time</code></strong>: Calcular la diferencia entre <code>Ship Date</code> y <code>Order Date</code> para medir el tiempo de procesamiento de cada pedido. Esta métrica es clave para entender la eficiencia operativa.</p>
+</li>
+<li>
+<p><strong><code>total_discount</code></strong>: Multiplicar el porcentaje de descuento (<code>Discount</code>) por el valor de la venta (<code>Sales</code>) para obtener el valor total del descuento aplicado. Esto ayudará a analizar el impacto de los descuentos en las ventas y beneficios.</p>
+</li>
+<li>
+<p><strong><code>total_profit_margin</code></strong>: Calcular el margen de beneficio como la relación entre <code>Profit</code> y <code>Sales</code>. Este indicador permitirá identificar qué transacciones o productos tienen los márgenes más altos.</p>
+</li>
+<li>
+<p><strong><code>order_size_category</code></strong>: Clasificar los pedidos en categorías como &quot;Pequeños&quot;, &quot;Medios&quot; y &quot;Grandes&quot; según la cantidad de productos vendidos (<code>Quantity</code>). Esto permitirá segmentar los análisis de ventas por tamaño de pedido.</p>
+</li>
+<li>
+<p><strong><code>shipping_delay</code></strong>: Crear una columna que indique si el envío de un pedido se retrasó, comparando el tiempo de envío real (<code>Shipping time range</code>) con el tiempo estimado. Esto proporcionará información clave sobre la puntualidad en la entrega de pedidos.</p>
+</li>
+</ul>
+<hr>
+<h3 id="ideas-para-el-dashboard">Ideas para el Dashboard:</h3>
+<p>El dashboard debe proporcionar una vista clara y concisa de los aspectos clave de las ventas y el desempeño de la empresa. Aquí hay algunas ideas para las visualizaciones que se pueden incluir en el dashboard:</p>
+<ol>
+<li>
+<p><strong>Tendencias de ventas por fecha</strong>: Un gráfico de líneas que muestre las ventas totales (<code>Sales</code>) a lo largo del tiempo, basado en la columna <code>formatted_order_date</code>, será útil para identificar picos y caídas en las ventas. Este análisis permitirá detectar patrones estacionales o eventos que influyen en el comportamiento de compra.</p>
+</li>
+<li>
+<p><strong>Distribución de ventas por categoría</strong>: Un gráfico de barras o un gráfico de pastel que muestre la distribución de ventas por <code>Category</code> y <code>Sub-Category</code> proporcionará una visión clara de qué tipos de productos están generando la mayor parte de los ingresos. Esto ayudará a identificar las categorías más rentables y posibles áreas de crecimiento.</p>
+</li>
+<li>
+<p><strong>Tiempo de procesamiento de pedidos</strong>: Un gráfico de barras que visualice el tiempo promedio que toma procesar los pedidos (<code>order_processing_time</code>) para cada categoría o por región permitirá evaluar la eficiencia del proceso de cumplimiento de pedidos y detectar dónde se pueden realizar mejoras.</p>
+</li>
+<li>
+<p><strong>Impacto de los descuentos en las ventas</strong>: Un gráfico de dispersión que compare el valor de <code>total_discount</code> con las ventas totales (<code>Sales</code>) permitirá analizar el impacto de los descuentos en los ingresos. Esto ayudará a evaluar si las promociones están impulsando las ventas o reduciendo el margen de beneficio.</p>
+</li>
+<li>
+<p><strong>Análisis de margen de beneficio</strong>: Un gráfico de barras que muestre el margen de beneficio (<code>total_profit_margin</code>) por categoría de producto o por cliente será útil para identificar qué productos o segmentos de clientes están generando mayores ganancias.</p>
+</li>
+<li>
+<p><strong>Ventas por región</strong>: Un gráfico de mapa o de barras que muestre las ventas por <code>Region</code> permitirá visualizar la distribución geográfica de las ventas y detectar áreas de oportunidad. Esta visualización ayudará a comprender dónde la empresa está teniendo mayor éxito y dónde puede mejorar su presencia.</p>
+</li>
+<li>
+<p><strong>Pedidos retrasados vs entregados a tiempo</strong>: Un gráfico de barras o de pastel que compare los pedidos enviados a tiempo con los pedidos retrasados (<code>shipping_delay</code>) proporcionará información clave sobre la eficiencia en la entrega de productos y ayudará a identificar problemas logísticos.</p>
+</li>
+</ol>
+
+            
+            
+        </body>
+        </html>
